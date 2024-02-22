@@ -3,18 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Development Resources</title>
+    <title>Image gallery</title>
+    <style>
+        .image-gallery{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .image-gallery img{
+            width: 30%;
+            margin: 10px;
+        }
+        @media screen and (max-width:800px) {
+            .image-gallery img {
+                width: 45%;
+            }
+        }
+        @media screen and (max-width:500px) {
+            .image-gallery img {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
-
-    <h1>Navigate Me:</h1>
-
-    <ul>
-        <li>Take me to<a href="https://pwskills.com/" target="_blank">PW Skills</a> to buy a course.</li>
-        <li>Take me to<a href="https://developer.mozilla.org/" target="_blank">MDN Docs</a> to know more about Wed Development.</li>
-        <li>Take me to<a href="https://lab.pwskills.com/%2F" target="_blank">PW Skills Lab</a> to practice live coding</li>
-        <!-- Add more links as needed -->
-    </ul>
-
+    <div class="image-gallery">
+        <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg" alt="image-1">
+        <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg" alt="image-2">
+        <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg" alt="image-3">
+    </div>
 </body>
 </html>
