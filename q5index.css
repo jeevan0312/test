@@ -1,0 +1,13 @@
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: 1px solid black;
+    /* justify-self: auto; */
+    justify-items: center;
+}
+.container > div{
+    padding: 5px;
+    background-color: wheat;
+    border: 1px solid black;
+  
+}
